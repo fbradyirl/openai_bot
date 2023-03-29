@@ -1,5 +1,7 @@
 # OpenAI bot
 
+![openai_bot](https://user-images.githubusercontent.com/254309/228500024-45f49d56-7c54-42cc-8a27-8e5b0c83a0ff.png)
+
 * Uses the [webex_bot](https://github.com/fbradyirl/webex_bot) library to pass through conversations with OpenAI.
 
 To use:

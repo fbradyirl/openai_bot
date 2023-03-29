@@ -1,9 +1,8 @@
 import logging
 
+import openai
 from webex_bot.formatting import quote_info, quote_warning
 from webex_bot.models.command import Command
-
-import openai
 
 log = logging.getLogger(__name__)
 
@@ -38,7 +37,8 @@ class OpenAiCommand(Command):
         :return: a string or Response object (or a list of either). Use Response if you want to return another card.
         """
 
-        log.info(f"Got message prompt from user: {prompt}")
+        log.info(f"Got message prompt from user: {prompt}. Sending to OpenAI API with the following "
+                 f"parameters: ENGINE={ENGINE}, TEMPERATURE={TEMPERATURE}, MAX_TOKENS={MAX_TOKENS} ...")
 
         """
         temperature: 
